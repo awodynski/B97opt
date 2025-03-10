@@ -91,7 +91,7 @@ This project implements a multistart optimization framework for computational ch
 
 Main configuration settings include:
 - **L2_B97:** Regularization parameter for the B97 functional.
-- **TESTSETS:** Test set dictionary with weights (weights are hosen to reproduce WTMAD-2).
+- **TESTSETS:** Test set dictionary with weights (weights are chosen to reproduce WTMAD-2).
 - **BASE_PATH & DFTD4_PATH:** Paths for input data and the external DFTD4 executable.
 - **INITIAL_PARAMS:** Initial guess for the parameter vector (total size of 18 parameters: LMF scaling, B97opp 6 parameters, B97par 7 parameters, S6 (D4), S8 (D4), MP2opp, MP2par).
 - **OPTIMIZE_INDICES & BOUNDS:** Indices to optimize and parameter bounds.
