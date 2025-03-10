@@ -51,7 +51,7 @@ This project implements a multistart optimization framework for computational ch
    
    - **L2_B97:** Regularization weight for the B97 functional.
    - **TESTSETS:** Dictionary containing test set names and corresponding weights.
-   - **BASE_PATH:** Path to the test set library (e.g., GMTKN55).
+   - **BASE_PATH:** Path to the test set library (e.g., GMTKN55), compressed in GMTKN55. 
    - **DFTD4_PATH:** Path to the DFTD4 executable.
    - **a1 and a2:** Nonlinear dispersion energy D4 parameters.
    - Other parameters such as the number of random splits, seed, and optimization settings.
@@ -65,7 +65,7 @@ This project implements a multistart optimization framework for computational ch
    ```
 
    The program will:
-   - Read the input data from `results.out`.
+   - Read the input data from `results.out` (compressed in results.tar.gz for one of the models tested for LDH).
    - Create a cache for loss and gradient computation internally during multistart optimization.
    - Optimize linear parameters for the B97 functional.
    - Print the best parameters and the corresponding loss value.
