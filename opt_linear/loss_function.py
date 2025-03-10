@@ -201,10 +201,12 @@ def loss_function(data_all: Dict[str, Any],
             conversion_factor = 627.5096080305927
             tmp = abs(energy_results[key] * conversion_factor -
                       data_all['testsets'][testset].exp_values[key])
-            mae_train[testset] += (tmp / num_ones *
+            if num_ones > 0:
+              mae_train[testset] += (tmp / num_ones *
                                    data_all['testsets'][testset]
                                    .random_split[key])
-            mae_validate[testset] += (tmp / num_zeros *
+            if num_zeros > 0:
+              mae_validate[testset] += (tmp / num_zeros *
                                       (1 - data_all['testsets']
                                        [testset].random_split[key]))
             mae_together[testset] += (tmp /
