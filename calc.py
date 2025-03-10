@@ -84,7 +84,6 @@ data_all = read_data(
 )
 
 # INITIAL PARAMETERS
-# The LMF dimension is fixed to 1; hence, the total parameter vector size is 1 + 17 = 18.
 INITIAL_PARAMS = np.zeros(18)
 OPTIMIZE_INDICES = list(range(18))
 BOUNDS = tuple((0, 1.5) for _ in range(18))
