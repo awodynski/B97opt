@@ -1,4 +1,4 @@
-# B97 and D4 Linear Parameter Optimizatior
+# B97 and D4 Linear Parameter Optimizer
 
 This project implements a multistart optimization framework for computational chemistry applications. The program optimizes linear parameters for the B97 functional against GMTKN55 and integrates external dispersion energy calculations via the DFTD4 program. It reads test set data, computes loss and gradient functions using TensorFlow, and uses SciPy's optimization routines to search for the optimal parameters.
 
