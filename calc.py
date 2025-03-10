@@ -65,8 +65,8 @@ TESTSETS = {
     "YBDE18": 0.013794926
 }
 
-BASE_PATH = '/projects/kaupp/testsets/TestsetLibrary/GMTKN55'
-DFTD4_PATH = '/homes2/chemie/wodynski/bin/panda6/bin/dftd4'
+BASE_PATH = './GMTKN55'
+DFTD4_PATH = '/path/to/dftd4/program/dftd4'
 
 # READ DATA
 data_all = read_data(
