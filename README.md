@@ -5,7 +5,7 @@ This project implements a multistart optimization framework for computational ch
 ## Features
 
 - **Data Processing:**  
-  Reads and processes test set data from an input file (e.g., `results.out`).
+  Reads and processes test set data from an input file (e.g., `results.out`) obtained with locally modified Turbomole code.
 
 - **B97 Linear Parameter Optimization:**  
   The program specifically optimizes linear parameters for the B97 functional and D4 correction.
