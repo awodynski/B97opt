@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(0, '../new/')
+sys.path.insert(0, '../opt_linear/')
 import numpy as np
 import tensorflow as tf
 from read_data import read_data 
